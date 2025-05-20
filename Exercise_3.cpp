@@ -1,3 +1,10 @@
+// Time Complexity : O(1) except O(n) for print
+// Space Complexity : O(1)
+// Did this code successfully run on Leetcode : -
+// Any problem you faced while coding this : -
+
+
+// Your code here along with comments explaining your approach
 #include <bits/stdc++.h> 
 using namespace std; 
   
