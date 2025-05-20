@@ -1,3 +1,10 @@
+// Time Complexity : O(1) for all
+// Space Complexity : o(1)
+// Did this code successfully run on Leetcode : -
+// Any problem you faced while coding this : -
+
+
+// Your code here along with comments explaining your approach
 #include <bits/stdc++.h> 
   
 using namespace std; 
@@ -27,7 +34,7 @@ bool Stack::push(int x)
         cout<<"Stack Overflow"<<endl;
         return false;
     } 
-    a[++top] = x;
+    a[++top] = x; // if not overflow put in the next space
     return true;
 } 
   
@@ -35,21 +42,21 @@ int Stack::pop()
 { 
     //Your code here
     //Check Stack Underflow as well 
-    if(top < 0){
+    if(top < 0){ // if the top pointer is less than 0
         cout<<"Stack underflow"<<endl;
         return -1;
     }
-    return a[top--];
+    return a[top--]; // if not underflow reduce the top and return the poped value
 } 
 int Stack::peek() 
 { 
     //Your code here
     //Check empty condition too
-    if(top < 0){
+    if(top < 0){ // if the top pointer is less than 0
         cout<<"Stack is empty"<<endl;
         return -1;
     }
-    return a[top];
+    return a[top]; // return the 
 } 
   
 bool Stack::isEmpty() 
